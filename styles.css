@@ -1,0 +1,8 @@
+.nav-items {
+  display: flex;
+}
+
+.nav-item {
+  display: inline;
+  
+}
