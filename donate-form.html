@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <nav class="nav">
+        <ul id="nav-items">
+          <li id="nav-item"><a href="index.html">Home</a></li>
+          <li id="nav-item"><a href="about.html">About</a></li>
+          <li id="nav-item"><a href="donate-form.html">Donate</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="donation-form">
+      <form class="form">
+        <label for="firstname"
+          >First Name: <input type="text" name="firstname" id="firstname"
+        /></label>
+        <label for="lastname"
+          >Last Name: <input type="text" name="surname" id="surname"
+        /></label>
+        <label for="email"
+          >Email: <input type="text" id="email" name="email"
+        /></label>
+        <label for="phonenumber"
+          >Phone Number:
+          <input
+            type="tel"
+            inputmode="numeric"
+            maxlength="10"
+            placeholder="(XXX) - XXX - XXXX"
+            id="phone"
+            name="phone"
+        /></label>
+        <label for="ccnum"
+          >Credit Card Number:
+          <input
+            id="ccn"
+            type="tel"
+            inputmode="numeric"
+            pattern="[0-9\s]{13, 19}"
+            maxlength="19"
+            placeholder="XXXX-XXXX-XXXX-XXXX"
+        /></label>
+        <label for="cccvc"
+          >Credit Card Code:
+          <input
+            type="numeric"
+            id="cccvc"
+            maxlength="3"
+            placeholder="CVC"
+            name="cccvc"
+        /></label>
+        <label for="ccexpirationdate"
+          >Expiration Date:
+          <select id="expirationMM" name="expirationMM">
+            <option value="">Month</option>
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+          <select id="expirationYY" name="expirationYY">
+            <option value="">Year</option>
+            <option value="23">2023</option>
+            <option value="24">2024</option>
+            <option value="25">2025</option>
+            <option value="26">2026</option>
+            <option value="27">2027</option>
+            <option value="28">2028</option>
+            <option value="29">2029</option>
+            <option value="30">2030</option>
+          </select></label
+        >
+        <input type="button" class="submit" value="Submit" />
+      </form>
+    </div>
+    <footer>
+      <h3>Flex and Robo &copy</h3>
+    </footer>
+  </body>
+</html>

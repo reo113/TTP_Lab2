@@ -22,6 +22,9 @@
   background-color: rgb(59, 61, 206);
 }
 
+}
+
+
 @media screen and (min-width: 10em) {
   img {
     height: 300px;
@@ -38,6 +41,7 @@
     gap: 20px;
     background-color: aquamarine;
     padding: 10px;
+  border: 1px solid blue;
 }
 
 .navbar {
@@ -99,4 +103,35 @@ h1 {
     width: 40%;
     border: 2px solid black;
     
+}
+
+.donation-form {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  overflow: auto;
+}
+
+#form-list {
+  list-style-type: none;
+  padding: 10px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  white-space: nowrap;
+}
+
+footer {
+  margin-top: auto;
 }
