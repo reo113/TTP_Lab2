@@ -39,3 +39,34 @@
 .navbar {
   padding-bottom: 10px;
 }
+
+.donation-form {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  overflow: auto;
+}
+
+#form-list {
+  list-style-type: none;
+  padding: 10px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  white-space: nowrap;
+}
+
+footer {
+  margin-top: auto;
+}
