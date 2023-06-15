@@ -12,7 +12,7 @@
 
 #nav-item a {
   display: block;
-  color: white;
+  color: gray;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -24,7 +24,7 @@
 
 @media screen and (min-width: 10em) {
   img {
-    height: 300px;
+    height: 500px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -103,14 +103,15 @@ h1 {
 
 .donation-form {
   border: 1px solid black;
-  margin: 10px;
+  margin: auto;
   padding: 10px;
   text-align: center;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  width: 60%;
   overflow: auto;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
 }
 
 #form-list {
@@ -120,8 +121,11 @@ h1 {
 
 body {
   min-height: 100vh;
+  padding: 10px;
+  justify-content: center;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
 }
 
 label {
@@ -135,4 +139,33 @@ label {
 }
 footer {
   margin-top: auto;
+}
+.donation-form .text {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 500;
+  color: gray;
+}
+.input-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+  margin-right: 20px;
 }
