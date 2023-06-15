@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: aquamarine;
+  background-color: tan;
 }
 
 #nav-item {
@@ -12,19 +12,19 @@
 
 #nav-item a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 #nav-item a:hover {
-  background-color: rgb(59, 61, 206);
+  background-color: rgb(110, 82, 20);
 }
 
 @media screen and (min-width: 10em) {
   img {
-    height: 300px;
+    height: 500px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -33,23 +33,97 @@
 }
 
 .banner-image {
-  border: 1px solid blue;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: tan;
+  padding: 10px;
 }
 
 .navbar {
   padding-bottom: 10px;
 }
+p {
+  color: black;
+  font-size: 16px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(1, minmax(auto, 200px));
+  background-color: white;
+  height: 50%;
+  border: 2px solid black;
+  text-align: left;
+  justify-content: space-around;
+}
+p#about-vets {
+  font-size: 20px;
+  display: flex;
+  text-align: start;
+}
+.vet-facts {
+  text-align: left;
+  background-color: white;
+  font-size: 18px;
+}
+h1 {
+  height: 100px;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: tan;
+  padding: 10px;
+}
+.about-section {
+  display: flex;
+  flex-direction: row;
+  background-color: tan;
+  padding: 10px;
+  width: auto;
+  border: 2px solid black;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  background-color: tan;
+  padding: 10px;
+  width: auto;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-us {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 50%;
+  border: 2px solid black;
+}
+#about-img {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 50%;
+  border: 2px solid black;
+}
 
 .donation-form {
   border: 1px solid black;
-  margin: 10px;
+  margin: auto;
   padding: 10px;
   text-align: center;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  width: 60%;
   overflow: auto;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
 }
 
 #form-list {
@@ -59,14 +133,73 @@
 
 body {
   min-height: 100vh;
+  padding: 10px;
+  justify-content: center;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(115deg, #0d3f08 10%, #0f7c15 90%);
 }
 
 label {
   white-space: nowrap;
 }
-
+#image-container {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  border: 2px solid black;
+}
 footer {
   margin-top: auto;
+}
+.donation-form .text {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 500;
+  color: gray;
+}
+.input-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.headline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-img {
+  padding-left: 20%;
+  padding-right: 20%;
+  background-image: url("https://www.barneslawfirm.com/wp-content/uploads/2019/09/ptsd-military-statistics-1140x458.jpeg");
+  background-size: cover;
 }
